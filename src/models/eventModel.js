@@ -18,6 +18,20 @@ const eventSchema = new mongoose.Schema({
         required: true,
     },
     location: {
+        locName: {
+          type: String,
+        },
+        coordinates: {
+          type: [Number],
+        },
+    },
+    invitations: {
+        type: [String],
+    },
+    participants: {
+        type: [String]
+    },
+    category: {
         type: String,
         required: true,
     },
